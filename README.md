@@ -1,8 +1,8 @@
-![Package Logo](https://banners.beyondco.de/Laravel%20Livewire%20Tables.png?theme=light&packageName=rappasoft%2Flaravel-livewire-tables&pattern=hideout&style=style_1&description=A+dynamic+table+component+for+Laravel+Livewire&md=1&fontSize=100px&images=table)
+![Package Logo](https://banners.beyondco.de/Laravel%20Livewire%20Tables.png?theme=light&packageName=Pkeogan%2Flaravel-livewire-tables&pattern=hideout&style=style_1&description=A+dynamic+table+component+for+Laravel+Livewire&md=1&fontSize=100px&images=table)
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/rappasoft/laravel-livewire-tables.svg?style=flat-square)](https://packagist.org/packages/rappasoft/laravel-livewire-tables)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/Pkeogan/laravel-livewire-tables.svg?style=flat-square)](https://packagist.org/packages/Pkeogan/laravel-livewire-tables)
 [![StyleCI](https://styleci.io/repos/250246992/shield?style=plastic)](https://github.styleci.io/repos/250246992)
-[![Total Downloads](https://img.shields.io/packagist/dt/rappasoft/laravel-livewire-tables.svg?style=flat-square)](https://packagist.org/packages/rappasoft/laravel-livewire-tables)
+[![Total Downloads](https://img.shields.io/packagist/dt/Pkeogan/laravel-livewire-tables.svg?style=flat-square)](https://packagist.org/packages/Pkeogan/laravel-livewire-tables)
 
 **This package is still in development and does not have a test suite.**
 
@@ -15,7 +15,7 @@ This plugin assumes you already have [Laravel Livewire](https://laravel-livewire
 You can install the package via composer:
 
 ``` bash
-composer require rappasoft/laravel-livewire-tables
+composer require Pkeogan/laravel-livewire-tables
 ```
 
 ## Publishing Assets
@@ -23,11 +23,11 @@ composer require rappasoft/laravel-livewire-tables
 Publishing assets are optional unless you want to customize this package.
 
 ``` bash
-php artisan vendor:publish --provider="Rappasoft\LaravelLivewireTables\LaravelLivewireTablesServiceProvider" --tag=config
+php artisan vendor:publish --provider="Pkeogan\LaravelLivewireTables\LaravelLivewireTablesServiceProvider" --tag=config
 
-php artisan vendor:publish --provider="Rappasoft\LaravelLivewireTables\LaravelLivewireTablesServiceProvider" --tag=views
+php artisan vendor:publish --provider="Pkeogan\LaravelLivewireTables\LaravelLivewireTablesServiceProvider" --tag=views
 
-php artisan vendor:publish --provider="Rappasoft\LaravelLivewireTables\LaravelLivewireTablesServiceProvider" --tag=lang
+php artisan vendor:publish --provider="Pkeogan\LaravelLivewireTables\LaravelLivewireTablesServiceProvider" --tag=lang
 ```
 
 ## Usage
@@ -43,9 +43,9 @@ namespace App\Http\Livewire;
 
 use App\User;
 use Illuminate\Database\Eloquent\Builder;
-use Rappasoft\LaravelLivewireTables\TableComponent;
-use Rappasoft\LaravelLivewireTables\Traits\HtmlComponents;
-use Rappasoft\LaravelLivewireTables\Views\Column;
+use Pkeogan\LaravelLivewireTables\TableComponent;
+use Pkeogan\LaravelLivewireTables\Traits\HtmlComponents;
+use Pkeogan\LaravelLivewireTables\Views\Column;
 
 class UsersTable extends TableComponent
 {
@@ -297,7 +297,7 @@ public function sort($attribute): void
 
 This package includes some of the functionality from the laravelcollective/html package modified to fit the needs of this package.
 
-To use these you must import the *Rappasoft\LaravelLivewireTables\Traits\HtmlComponents* trait.
+To use these you must import the *Pkeogan\LaravelLivewireTables\Traits\HtmlComponents* trait.
 
 You may return any of these functions from the format() method of a column:
 
@@ -363,9 +363,9 @@ namespace App\Http\Livewire;
 
 use App\User;
 use Illuminate\Database\Eloquent\Builder;
-use Rappasoft\LaravelLivewireTables\TableComponent;
-use Rappasoft\LaravelLivewireTables\Traits\HtmlComponents;
-use Rappasoft\LaravelLivewireTables\Views\Column;
+use Pkeogan\LaravelLivewireTables\TableComponent;
+use Pkeogan\LaravelLivewireTables\Traits\HtmlComponents;
+use Pkeogan\LaravelLivewireTables\Views\Column;
 
 class UsersTable extends TableComponent
 {
@@ -423,7 +423,7 @@ class UsersTable extends TableComponent
 
 #### Customizing Exports
 
-Currently, there are no customization options available. But there is a config item called `exports` where you can define the class to do the rendering. You can use the `\Rappasoft\LaravelLivewireTables\Exports\Export` class as a base.
+Currently, there are no customization options available. But there is a config item called `exports` where you can define the class to do the rendering. You can use the `\Pkeogan\LaravelLivewireTables\Exports\Export` class as a base.
 
 More options will be added in the future, but the built in options should be good for most applications.
 
@@ -486,7 +486,7 @@ If you discover any security related issues, please email rappa819@gmail.com ins
 
 ## Credits
 
-- [Anthony Rappa](https://github.com/rappasoft)
+- [Anthony Rappa](https://github.com/Pkeogan)
 - [All Contributors](../../contributors)
 
 ## License

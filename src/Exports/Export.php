@@ -1,13 +1,13 @@
 <?php
 
-namespace Rappasoft\LaravelLivewireTables\Exports;
+namespace Pkeogan\LaravelLivewireTables\Exports;
 
 use Illuminate\Database\Eloquent\Builder;
 use Maatwebsite\Excel\Concerns\Exportable;
 use Maatwebsite\Excel\Concerns\FromQuery;
 use Maatwebsite\Excel\Concerns\WithHeadings;
 use Maatwebsite\Excel\Concerns\WithMapping;
-use Rappasoft\LaravelLivewireTables\Traits\ExportHelper;
+use Pkeogan\LaravelLivewireTables\Traits\ExportHelper;
 
 /**
  * Class CSVExport.

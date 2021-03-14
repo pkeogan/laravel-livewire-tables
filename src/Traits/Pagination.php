@@ -1,6 +1,6 @@
 <?php
 
-namespace Rappasoft\LaravelLivewireTables\Traits;
+namespace Pkeogan\LaravelLivewireTables\Traits;
 
 /**
  * Trait Pagination.

@@ -1,8 +1,8 @@
 <?php
 
-namespace Rappasoft\LaravelLivewireTables\Traits;
+namespace Pkeogan\LaravelLivewireTables\Traits;
 
-use Rappasoft\LaravelLivewireTables\Filters\BaseFilter;
+use Pkeogan\LaravelLivewireTables\Filters\BaseFilter;
 
 trait Filter
 {

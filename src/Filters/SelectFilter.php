@@ -1,8 +1,8 @@
 <?php
 
-namespace Rappasoft\LaravelLivewireTables\Filters;
+namespace Pkeogan\LaravelLivewireTables\Filters;
 
-use Rappasoft\LaravelLivewireTables\Filters\Traits\HasOptions;
+use Pkeogan\LaravelLivewireTables\Filters\Traits\HasOptions;
 
 class SelectFilter extends BaseFilter
 {

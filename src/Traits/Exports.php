@@ -1,10 +1,10 @@
 <?php
 
-namespace Rappasoft\LaravelLivewireTables\Traits;
+namespace Pkeogan\LaravelLivewireTables\Traits;
 
 use Exception;
 use Maatwebsite\Excel\Excel;
-use Rappasoft\LaravelLivewireTables\Exceptions\UnsupportedExportFormatException;
+use Pkeogan\LaravelLivewireTables\Exceptions\UnsupportedExportFormatException;
 
 /**
  * Trait Exports.

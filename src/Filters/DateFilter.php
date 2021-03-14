@@ -1,6 +1,6 @@
 <?php
 
-namespace Rappasoft\LaravelLivewireTables\Filters;
+namespace Pkeogan\LaravelLivewireTables\Filters;
 
 use Carbon\Carbon;
 

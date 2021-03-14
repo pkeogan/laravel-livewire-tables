@@ -1,14 +1,14 @@
 {
     "name": "pkeogan/laravel-livewire-tables",
-    "description": "Forked from rappasoft A dynamic table component for Laravel Livewire",
+    "description": "Forked from Pkeogan A dynamic table component for Laravel Livewire",
     "keywords": [
-        "rappasoft",
+        "Pkeogan",
         "livewire",
         "datatables",
         "tables",
         "laravel"
     ],
-    "homepage": "https://github.com/rappasoft/laravel-livewire-tables",
+    "homepage": "https://github.com/Pkeogan/laravel-livewire-tables",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -32,12 +32,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Rappasoft\\LaravelLivewireTables\\": "src"
+            "Pkeogan\\LaravelLivewireTables\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Rappasoft\\LaravelLivewireTables\\Tests\\": "tests"
+            "Pkeogan\\LaravelLivewireTables\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -51,7 +51,7 @@
     "extra": {
         "laravel": {
             "providers": [
-              "Rappasoft\\LaravelLivewireTables\\LaravelLivewireTablesServiceProvider"
+              "Pkeogan\\LaravelLivewireTables\\LaravelLivewireTablesServiceProvider"
             ]
         }
     }

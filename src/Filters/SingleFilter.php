@@ -4,13 +4,13 @@ namespace Pkeogan\LaravelLivewireTables\Filters;
 
 use Pkeogan\LaravelLivewireTables\Filters\Traits\HasOptions;
 
-class BooleanFilter extends BaseFilter
+class SingleFilter extends BaseFilter
 {
     use HasOptions;
 
-    public $type = 'boolean';
+    public $type = 'single';
 
-    public $view = 'boolean-filter';
+    public $view = 'single-filter';
 
     public function passValuesFromRequestToFilter($values): array
     {

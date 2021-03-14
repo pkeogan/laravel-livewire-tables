@@ -1,6 +1,6 @@
 <?php
 
-namespace Rappasoft\LaravelLivewireTables\Traits;
+namespace Pkeogan\LaravelLivewireTables\Traits;
 
 /**
  * Trait Table.
@@ -13,6 +13,13 @@ trait Table
      * @var bool
      */
     public $tableHeaderEnabled = true;
+
+    /**
+     * Whether or not to display the select all check boxes.
+     *
+     * @var bool
+     */
+    public $showHeaderSelectAllCheck = true;
 
     /**
      * Whether or not to display the table footer.
@@ -57,6 +64,16 @@ trait Table
      * @return string|null
      */
     public function setTableRowClass($model): ?string
+    {
+        return null;
+    }
+
+     /**
+     * @param $model
+     *
+     * @return string|null
+     */
+    public function setTableAlternateRowClass($model): ?string
     {
         return null;
     }

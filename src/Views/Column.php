@@ -1,9 +1,9 @@
 <?php
 
-namespace Rappasoft\LaravelLivewireTables\Views;
+namespace Pkeogan\LaravelLivewireTables\Views;
 
 use Illuminate\Support\Str;
-use Rappasoft\LaravelLivewireTables\Traits\CanBeHidden;
+use Pkeogan\LaravelLivewireTables\Traits\CanBeHidden;
 
 /**
  * Class Column.
@@ -16,6 +16,11 @@ class Column
      * @var string
      */
     protected $text;
+
+    /**
+     * @var string
+     */
+    protected $cellClass;
 
     /**
      * @var string
@@ -103,6 +108,7 @@ class Column
      */
     public function getAttribute(): string
     {
+        
         return $this->attribute;
     }
 
@@ -279,5 +285,26 @@ class Column
         $this->includeInExport = false;
 
         return $this;
+    }
+
+    /**
+     * @return $this
+     */
+    public function appendCellClass(string $class): self
+    {
+        $this->cellClass = $class;
+        return $this;
+    }
+
+    /**
+     * @return $this
+     */
+    public function getCellClass(): string
+    {
+        if($this->cellClass){
+            return $this->cellClass;
+        } else {
+            return '';
+        }
     }
 }

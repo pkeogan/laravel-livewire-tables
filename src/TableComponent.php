@@ -1,21 +1,21 @@
 <?php
 
-namespace Rappasoft\LaravelLivewireTables;
+namespace Pkeogan\LaravelLivewireTables;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Str;
 use Illuminate\View\View;
 use Livewire\Component;
 use Livewire\WithPagination;
-use Rappasoft\LaravelLivewireTables\Traits\Exports;
-use Rappasoft\LaravelLivewireTables\Traits\Filter;
-use Rappasoft\LaravelLivewireTables\Traits\Loading;
-use Rappasoft\LaravelLivewireTables\Traits\Options;
-use Rappasoft\LaravelLivewireTables\Traits\Pagination;
-use Rappasoft\LaravelLivewireTables\Traits\Search;
-use Rappasoft\LaravelLivewireTables\Traits\Sorting;
-use Rappasoft\LaravelLivewireTables\Traits\Table;
-use Rappasoft\LaravelLivewireTables\Traits\Yajra;
+use Pkeogan\LaravelLivewireTables\Traits\Exports;
+use Pkeogan\LaravelLivewireTables\Traits\Filter;
+use Pkeogan\LaravelLivewireTables\Traits\Loading;
+use Pkeogan\LaravelLivewireTables\Traits\Options;
+use Pkeogan\LaravelLivewireTables\Traits\Pagination;
+use Pkeogan\LaravelLivewireTables\Traits\Search;
+use Pkeogan\LaravelLivewireTables\Traits\Sorting;
+use Pkeogan\LaravelLivewireTables\Traits\Table;
+use Pkeogan\LaravelLivewireTables\Traits\Yajra;
 
 /**
  * Class TableComponent.
@@ -134,5 +134,11 @@ abstract class TableComponent extends Component
         }
 
         return $builder->orderBy($this->getSortField($builder), $this->sortDirection);
+    }
+
+
+    public function setAlternateTableRowClass($model): ?string 
+    {
+        return "bg-gray-50";
     }
 }
